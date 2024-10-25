@@ -2,13 +2,13 @@
 include("connection.php");
 $con = connection();
 
-$id_producto = $_POST['id_producto'];
+$id = $_POST['id_tester'];
 $nombre = $_POST['nombre'];
-$marca = $_POST['marca'];
-$precio = $_POST['precio'];
+$marca = $_POST['apellido'];
+$precio = $_POST['edad'];
 
 
-$sql = "INSERT INTO productos VALUES('$id_producto','$nombre','$marca','$precio')";
+$sql = "INSERT INTO testers VALUES('$id_testers ,'$nombre','$apellido','$edad')";
 $query = mysqli_query($con, $sql);
 
 if($query){
